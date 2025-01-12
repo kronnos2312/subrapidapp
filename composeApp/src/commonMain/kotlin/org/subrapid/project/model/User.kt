@@ -1,6 +1,6 @@
 package org.subrapid.project.model
 
-data class User(val id:Int?,
+data class User(val id:Long?,
                 val name:String,
                 val email:String,
                 val createAt: String,
@@ -8,7 +8,7 @@ data class User(val id:Int?,
                 val message:String,
                 val result:String )
 val users = (1..100).map{
-    User(id = it,
+    User(id = it.toLong(),
         name="Usuario $it",
         email = "jjoyaquintero@gmail.com",
         createAt = "",
